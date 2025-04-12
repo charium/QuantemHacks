@@ -1,0 +1,5 @@
+[
+    {"id": "alice", "age": 25, "location": [34.05, -118.24], "interests": ["cats", "music"]},
+    {"id": "bob", "age": 28, "location": [40.71, -74.01], "interests": ["dogs", "sports"]},
+    {"id": "carol", "age": 30, "location": [37.77, -122.42], "interests": ["cooking", "music"]}
+  ]
