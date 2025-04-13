@@ -9,6 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 import networkx as nx
+from PIL import Image
 
 # -----------------------------
 # FUNCTIONS
@@ -80,8 +81,13 @@ def create_visualization(users, match_scores, threshold=0.3):
 # -----------------------------
 # STREAMLIT UI
 # -----------------------------
+
+
 st.set_page_config(page_title="Quantum Matcher", layout="wide")
-st.title("Entangle@UNC")
+logo = Image.open("entangle@unc.png") 
+logo = logo.resize((150, 150))
+st.image(logo, width=150) 
+
 
 if 'users' not in st.session_state:
     st.session_state.users = [
