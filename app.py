@@ -1,5 +1,6 @@
 import streamlit as st
 
+authors = ["Akshan Sameullah, Lila Anafi, Milena Páez Silva, and Chloe Hall"]
 st.set_page_config(page_title="Entagle! ", page_icon="🧠")
 
 st.title("🧠 Find your best match")
@@ -7,6 +8,7 @@ st.markdown("This survey assesses your **interest** and **experience** in quantu
 
 value = 5  # Normalization factor
 
+st.footer("Created by " + ", ".join(authors))
 # Define survey questions
 interest_questions = [
     "a1. How interested are you in quantum computing? (1-5)",
