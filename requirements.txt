@@ -1,0 +1,4 @@
+qiskit[all]
+streamlit
+numpy
+matplotlib
