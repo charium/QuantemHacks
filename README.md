@@ -12,7 +12,7 @@ This app maps user inputs (experience and interest) into quantum states using Qi
 ##Usage
 Visit our deployed webpage: [entangled@unc](https://qentangled.streamlit.app/Survey)
 
-The website it prepopulated with data. To enter custom data, click 'survey' in the lefthand sidebar and answer each question. Once the answers are submitted! They automatically update in the 'matching' section. You can view the raw match score in the bottom. 
+The website is pre-populated with data. To enter custom data, click 'survey' in the lefthand sidebar and answer each question. Once the answers are submitted, they automatically update in the 'matching' section. You can view the raw match score in this section at the bottom of the webpage. Happy matching!
 
 ## 📦 Features
 
