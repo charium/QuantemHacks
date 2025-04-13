@@ -7,14 +7,22 @@ import matplotlib.pyplot as plt
 from qiskit import QuantumCircuit
 from qiskit_aer import Aer
 from qiskit.quantum_info import Statevector
-# -----------------------------
+from app import user_data
+print(user_data)
+variable = user_data
+# ----------------------------
 # SIMULATED USER DATA
 # -----------------------------
-USERS = [
-    {"name": "Alice", "experience": 0.2, "interest": 0.6},
-    {"name": "Bob", "experience": 0.8, "interest": 0.5},
-    {"name": "Charlie", "experience": 0.5, "interest": 0.9},
-]
+    # USERS = [
+    #     {"name": "Alice", "experience": 0.2, "interest": 0.6},
+    #     {"name": "Bob", "experience": 0.8, "interest": 0.5},
+    #     {"name": "Charlie", "experience": 0.5, "interest": 0.9},
+    # ]
+for user in user_data:
+    name = user["name"]
+    interest = user["interest"]
+    experience = user["experience"]
+
 # -----------------------------
 # FUNCTIONS TO ENCODE AND COMPARE USERS
 # -----------------------------
@@ -48,7 +56,8 @@ def compare_users(user1, user2):
 # -----------------------------
 # PAIRWISE MATCHING
 # -----------------------------
-match_scores = {}for i in range(len(USERS)):
+match_scores = {}
+for i in range(len(USERS)):
     for j in range(i + 1, len(USERS)):
         user1 = USERS[i]
         user2 = USERS[j]
