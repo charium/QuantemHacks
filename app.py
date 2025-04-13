@@ -4,11 +4,10 @@ authors = ["Akshan Sameullah, Lila Anafi, Milena Páez Silva, and Chloe Hall"]
 st.set_page_config(page_title="Entagle! ", page_icon="🧠")
 
 st.title("🧠 Find your best match")
+st.header("Brought to you by " + ", ".join(authors))
 st.markdown("This survey assesses your **interest** and **experience** in quantum computing to help match potential collaborators.")
 
 value = 5  # Normalization factor
-
-st.footer("Created by " + ", ".join(authors))
 # Define survey questions
 interest_questions = [
     "a1. How interested are you in quantum computing? (1-5)",
