@@ -2,3 +2,4 @@ qiskit[all]
 streamlit
 numpy
 matplotlib
+Aer
