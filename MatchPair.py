@@ -5,7 +5,7 @@
 # MatchPair.py
 
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from qiskit import QuantumCircuit
 from qiskit_aer import Aer
 
@@ -57,15 +57,15 @@ def run_matching(user_data):
             print(f"Match {key}: {score:.3f}")
 
     # Optional: Plot chart
-    names = list(match_scores.keys())
-    scores = list(match_scores.values())
-    plt.figure(figsize=(10, 5))
-    plt.barh(names, scores, color='purple')
-    plt.xlabel("Quantum Match Score (Probability of |11⟩)")
-    plt.title("Compatibility Between Participants")
-    plt.xticks(np.arange(0, 1.1, 0.1))
-    plt.grid(True, axis='x')
-    plt.tight_layout()
-    plt.show()
+    # names = list(match_scores.keys())
+    # scores = list(match_scores.values())
+    # plt.figure(figsize=(10, 5))
+    # plt.barh(names, scores, color='purple')
+    # plt.xlabel("Quantum Match Score (Probability of |11⟩)")
+    # plt.title("Compatibility Between Participants")
+    # plt.xticks(np.arange(0, 1.1, 0.1))
+    # plt.grid(True, axis='x')
+    # plt.tight_layout()
+    # plt.show()
 
     return match_scores
