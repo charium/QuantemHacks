@@ -9,7 +9,7 @@
 This app maps user inputs (experience and interest) into quantum states using Qiskit's `QuantumCircuit` and `Statevector`. By comparing these statevectors via cosine similarity, it calculates match scores and visualizes relationships using bar charts and a dynamic network graph.
 
 ---
-##Usage
+## Usage
 Visit our deployed webpage: [entangled@unc](https://qentangled.streamlit.app/Survey)
 
 The website is pre-populated with data. To enter custom data, click 'survey' in the lefthand sidebar and answer each question. Once the answers are submitted, they automatically update in the 'matching' section. You can view the raw match score in this section at the bottom of the webpage. Happy matching!
