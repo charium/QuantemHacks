@@ -1,0 +1,7 @@
+qiskit[all]
+streamlit
+numpy
+matplotlib
+qiskit_aer
+networkx
+scikit-learn
