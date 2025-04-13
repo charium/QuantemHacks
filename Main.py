@@ -112,7 +112,15 @@ for user in st.session_state.users:
 # Compute match scores
 st.subheader("Match Scores")
 match_scores = compute_match_scores(user_vectors)
+# Adding variability using Schrodinger's equation to match scores
+def schrodinger_variability(match_scores):
+    for key in match_scores.keys():
+        time = np.random.uniform(0, 2 * np.pi)  # Random "time" for phase evolution
+        variability = np.sin(time) * np.random.normal(0, 0.1)  # Oscillatory noise
+        match_scores[key] += variability
+    return match_scores
 
+match_scores = schrodinger_variability(match_scores)
 # Display the network graph first
 threshold = st.slider("Match Strength Threshold", min_value=0.0, max_value=1.0, value=0.3)
 fig = create_visualization(st.session_state.users, match_scores, threshold)
